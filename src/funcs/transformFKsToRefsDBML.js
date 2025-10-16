@@ -38,5 +38,5 @@ module.exports = function transformFKsToRefsDBML(
     .sort()
     .join(``);
 
-  return `${dbml} ${EOL} ${EOL}`;
+  return `${dbml}${EOL}${EOL}`;
 };

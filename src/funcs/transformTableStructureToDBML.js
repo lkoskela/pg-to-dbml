@@ -14,7 +14,7 @@ module.exports = function transformTableStructureToDBML(
     columnDefinitions.push('', `  note: '${comment.replace(/'/g, "\\'")}'`);
   }
 
-  columnDefinitions.push(`} ${EOL} ${EOL} `);
+  columnDefinitions.push(`}${EOL}${EOL}`);
 
-  return columnDefinitions.join(`${EOL} `);
+  return columnDefinitions.join(`${EOL}`);
 };
