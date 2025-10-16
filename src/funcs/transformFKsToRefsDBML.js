@@ -35,6 +35,7 @@ module.exports = function transformFKsToRefsDBML(
 
       return `${EOL}Ref: ${fromString}.${foreignKey.column_name} > ${toString}.${foreignRelation.column_name}`;
     })
+    .sort()
     .join(``);
 
   return `${dbml} ${EOL} ${EOL}`;
